@@ -1,5 +1,5 @@
 /**
- * Name: Nathan
+ * Name: Nathan hinds
  */
 package org.howard.edu.lsp.assignment1;
 
