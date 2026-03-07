@@ -1,0 +1,69 @@
+CRC Card 1 — Aircraft
+
+Responsibilities
+Hold current aircraft state (flight number, type, position, altitude, etc.)
+Update its state when new data arrives
+Provide its current details when requested
+
+Collaborators
+AircraftRepository
+DangerDetector
+ATCDisplay
+
+CRC Card 2 — TransponderReceiver
+
+Responsibilities
+Receive incoming transponder data packets
+Parse packets into aircraft updates (flight id + new state)
+Send updates to the repository
+
+Collaborators
+AircraftRepository
+
+CRC Card 3 — AircraftRepository
+
+Responsibilities
+Store and manage Aircraft objects (create if new, update if existing)
+Provide aircraft list for display
+Provide one aircraft’s details for queries
+
+Collaborators
+Aircraft
+ATCDisplay
+ControllerConsole
+DangerDetector
+
+CRC Card 4 — ATCDisplay
+
+Responsibilities
+Show aircraft positions/info to the controller
+Refresh display every 10 seconds using repository data
+Allow selecting an aircraft on screen
+
+Collaborators
+AircraftRepository
+ControllerConsole
+
+CRC Card 5 — DangerDetector
+
+Responsibilities
+Analyze aircraft states for unsafe situations (e.g., too close, collision risk)
+Generate alerts when danger is detected
+
+Collaborators
+AircraftRepository
+Aircraft
+ControllerConsole
+
+
+CRC Card 6 — ControllerConsole
+
+Responsibilities
+Handle controller queries (request aircraft details)
+Present alerts to the controller
+Show detailed info for a selected aircraft
+
+Collaborators
+AircraftRepository
+ATCDisplay
+DangerDetector
