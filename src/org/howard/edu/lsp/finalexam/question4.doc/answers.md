@@ -1,0 +1,3 @@
+I first understood AI to be a tool to just complete assingments for you. However, overtime of the semester i began to use it to guide me and work alongside me instead of for more. It specifically aided in my ability to produce code but also intepret and understand the data structure/concepts that are being applied.
+
+In future i plan to continue to use AI the same. As a tool that makes me more efficient and proficient with code whether i am using it for projects or in the work environment. I also will maintain a strong belief that AI cannot replace real engineers. It may be powerful but only when the person using it understands not to abuse it and that it is not always correct.
