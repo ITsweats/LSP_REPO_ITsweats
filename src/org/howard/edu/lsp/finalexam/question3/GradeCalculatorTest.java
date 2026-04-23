@@ -1,4 +1,4 @@
-package org.howard.edu.lsp.question3;
+package org.howard.edu.lsp.finalexam.question3;
 
 import static org.junit.jupiter.api.Assertions.*;
 
